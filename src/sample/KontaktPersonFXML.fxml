@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.KontaktPersonFXML">
+   <children>
+      <TableView layoutY="1.0" prefHeight="400.0" prefWidth="600.0">
+        <columns>
+          <TableColumn minWidth="127.0" prefWidth="133.0" text="Navn" />
+          <TableColumn prefWidth="142.0" text="Telefonnummer" />
+            <TableColumn prefWidth="75.0" text="Epost" />
+            <TableColumn prefWidth="75.0" text="Nettside" />
+            <TableColumn prefWidth="75.0" text="Firma" />
+            <TableColumn prefWidth="99.0" text="Kommentarer" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
