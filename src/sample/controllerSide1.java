@@ -1,5 +1,7 @@
 package sample;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -16,6 +18,8 @@ import java.util.ArrayList;
 public class controllerSide1 {
    public static  ArrayList<Object> LokalerList = new ArrayList<Object>();
 
+   public ObservableList<Object> observableList=FXCollections.observableArrayList();
+
 
     @FXML
     private AnchorPane rootPane;
@@ -29,8 +33,6 @@ public class controllerSide1 {
     @FXML
     private TextField txtAntall;
 
-
-
     @FXML
     void btnRegistrer(ActionEvent event) throws IOException {
         Parent tableViewParent=FXMLLoader.load(getClass().getClassLoader().getResource("sample/side2.fxml"));
@@ -42,11 +44,11 @@ public class controllerSide1 {
 
         Lokale lokale= new Lokale(txtLokale.getText(),txtType.getText(),txtAntall.getText());
         LokalerList.add(lokale);
+        observableList.addAll(txtLokale.getText(),txtType.getText(),txtAntall.getText());
 
-
+        /*Skal så prøve å addde data til lokalerList*/
 
 
 
     }
-
 }

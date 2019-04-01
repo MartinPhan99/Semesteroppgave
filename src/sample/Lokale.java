@@ -31,7 +31,7 @@ public class Lokale {
     }
 
     public String toString() {
-        return getLokaleNavn()+" "+getTypeLokale()+" "+getAntallPlasser();
+        return getLokaleNavn()+" "+getTypeLokale()+" "+getAntallPlasser()+"\n";
     }
     public String toText() {
         return getLokaleNavn()+" "+getTypeLokale()+" "+getAntallPlasser();
