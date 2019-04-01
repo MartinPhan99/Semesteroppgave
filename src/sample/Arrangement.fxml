@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="side1" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllerSide1">
+    <children>
+        <TextField fx:id="txtKontaktperson" layoutX="226.0" layoutY="124.0" />
+        <TextField fx:id="txtLokalType" layoutX="226.0" layoutY="188.0" />
+        <TextField fx:id="txtNavnArrangement" layoutX="226.0" layoutY="268.0" />
+        <TextField fx:id="txtArtisterDeltagelse" layoutX="226.0" layoutY="124.0" />
+        <TextField fx:id="txtProgram" layoutX="226.0" layoutY="188.0" />
+        <TextField fx:id="txtSted" layoutX="226.0" layoutY="268.0" />
+        <TextField fx:id="txtTidspunkt" layoutX="226.0" layoutY="124.0" />
+        <TextField fx:id="txtBillettpris" layoutX="226.0" layoutY="188.0" />
+        <TextField fx:id="txtBillettsalg" layoutX="226.0" layoutY="268.0" />
+        <Button layoutX="275.0" layoutY="321.0" mnemonicParsing="false" onAction="#btnRegistrer" text="Registrer" />
+        <Label layoutX="248.0" layoutY="90.0" text="Navn på kontaktperson" />
+        <Label layoutX="232.0" layoutY="162.0" text="Hvilken type lokale er det " />
+        <Label layoutX="218.0" layoutY="233.0" text="Navn på arrangement " />
+        <Label layoutX="218.0" layoutY="233.0" text="Artister/personer som skal delta " />
+        <Label layoutX="218.0" layoutY="233.0" text="Hva er programmet? " />
+        <Label layoutX="218.0" layoutY="233.0" text="Lokalets sted " />
+        <Label layoutX="218.0" layoutY="233.0" text="Tidspunkt " />
+        <Label layoutX="218.0" layoutY="233.0" text="Billettpris " />
+        <Label layoutX="218.0" layoutY="233.0" text="Bilettsalg " />
+    </children>
+</AnchorPane>
