@@ -1,5 +1,7 @@
 package sample;
 
+import javafx.beans.property.StringProperty;
+
 public class Lokale {
 
     private String lokaleNavn;
@@ -36,6 +38,7 @@ public class Lokale {
     public String toText() {
         return getLokaleNavn()+" "+getTypeLokale()+" "+getAntallPlasser();
     }
+
 
 
 }

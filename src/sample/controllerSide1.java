@@ -16,9 +16,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class controllerSide1 {
-   public static  ArrayList<Object> LokalerList = new ArrayList<Object>();
+   public static  ArrayList<Object> lokalerList = new ArrayList<Object>();
 
-   public ObservableList<Object> observableList=FXCollections.observableArrayList();
 
 
     @FXML
@@ -43,12 +42,19 @@ public class controllerSide1 {
         /*Duplisert kode, mulig å lage en medtode for koden over*/
 
         Lokale lokale= new Lokale(txtLokale.getText(),txtType.getText(),txtAntall.getText());
-        LokalerList.add(lokale);
-        observableList.addAll(txtLokale.getText(),txtType.getText(),txtAntall.getText());
+        lokalerList.add(lokale);
+
 
         /*Skal så prøve å addde data til lokalerList*/
+        /*
+        ObservableList<Lokale> list=FXCollections.observableArrayList(
+                new Lokale(lokale.getLokaleNavn(),lokale.getTypeLokale(),lokale.getAntallPlasser())
 
-
+        );
+        */
 
     }
+
+
+
 }

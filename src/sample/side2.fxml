@@ -11,7 +11,7 @@
       <Button layoutX="115.0" layoutY="298.0" mnemonicParsing="false" onAction="#visRegistrerte" text="Vis Registrerte" />
       <Label fx:id="registrertLokale" layoutX="91.0" layoutY="200.0" prefHeight="92.0" prefWidth="418.0" />
       <Button layoutX="362.0" layoutY="298.0" mnemonicParsing="false" onAction="#tilbakeTilRegistrering" text="Gå tilbake til registrering" />
-      <TableView id="tabellLokaler" fx:id="tabellLokaler" layoutX="72.0" layoutY="46.0" prefHeight="200.0" prefWidth="478.0">
+      <TableView id="tabellLokaler" fx:id="tableView" layoutX="72.0" layoutY="46.0" prefHeight="200.0" prefWidth="478.0">
         <columns>
           <TableColumn fx:id="lokaleNavn" prefWidth="124.0" text="Navn på lokale" />
           <TableColumn fx:id="lokaleType" prefWidth="215.5" text="Type Lokale" />
